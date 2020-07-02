@@ -2,7 +2,7 @@
 
 SEI-23 Project 1
 
-Game is hosted here: lalala
+Game is hosted here: 
 
 Project 1 Objectives
 Create basic Game with HTML, JS and CSS
