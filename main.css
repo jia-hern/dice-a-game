@@ -178,10 +178,11 @@ i {
 	top: 45px;
 }
 .btn-roll {
-	top: 403px;
+	top: 467px;
 }
 .btn-pk {
 	top: 467px;
+	visibility: hidden;
 }
 
 .dice-top,
