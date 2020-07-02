@@ -180,9 +180,9 @@ $('.btn-new').click(function() {
 	endGameScore = 20;
 	finalScores = [ 0, 0 ];
 	blueAlive = 3;
-	RedAlive = 3;
-	blueDead = 0;
-	redDead = 0;
+	redAlive = 3;
+	blueArr = [ 1, 1, 1 ];
+	redArr = [ 1, 1, 1 ];
 });
 document.querySelector('.btn-roll').addEventListener('click', function() {
 	if (gamePlay) {
@@ -196,8 +196,13 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
 		document.querySelector('.dice-bottom').setAttribute('src', 'dice-' + diceNumberBottom + '.png');
 		changePlayer();
 		console.log('current Player is ', currentColour, currentTurn);
+		if (currentColour == 'blue' && currentTurn == 3) {
+			document.querySelector('.btn-roll').style.visibility = 'hidden';
+			document.querySelector('.btn-pk').style.visibility = 'visible';
+		}
 	}
 });
+
 document.querySelector('.btn-pk').addEventListener('click', function() {
 	if (gamePlay) {
 		for (let index = 0; index < 3; index++) {
@@ -216,22 +221,24 @@ document.querySelector('.btn-pk').addEventListener('click', function() {
 				if (document.querySelector('#hp-blue-' + index).textContent <= 0) {
 					document.getElementById('img-blue-' + index).src = 'angel-teddy.jpg';
 					document.querySelector('#hp-blue-' + index).textContent = 0;
-					blueDead += 1;
-					blueAlive -= blueDead;
+					blueArr[index] = 0;
+					blueAlive = blueArr.reduce((a, b) => a + b, 0);
+					console.log('Blue alive is: ', blueAlive, index);
 				}
 				if (document.querySelector('#hp-red-' + index).textContent <= 0) {
 					document.getElementById('img-red-' + index).src = 'angel-teddy.jpg';
 					document.querySelector('#hp-red-' + index).textContent = 0;
-					redDead += 1;
-					RedAlive -= redDead;
+					redArr[index] = 0;
+					redAlive = redArr.reduce((a, b) => a + b, 0);
+					console.log('Red alive is: ', redAlive, index);
 				}
 			}
 		}
 	}
-
 	document.querySelector('#total-alive-0').textContent = blueAlive;
-	document.querySelector('#total-alive-1').textContent = RedAlive;
+	document.querySelector('#total-alive-1').textContent = redAlive;
 });
+
 function changePlayer() {
 	if (currentColour == 'blue') {
 		currentColour = 'red';
@@ -244,6 +251,36 @@ function changePlayer() {
 		document.getElementById('name-0').style.fontWeight = '700';
 	}
 }
+// function checkWin() {
+// 	if (
+// 		(document.querySelector('#hp-blue-0').textContent == 0 &&
+// 			document.querySelector('#hp-red-0').textContent == 0) ||
+// 		document.querySelector('#hp-blue-0').textContent == 0 ||
+// 		document.querySelector('#hp-red-0').textContent == 0
+// 	) {
+// 		if (
+// 			(document.querySelector('#hp-blue-1').textContent == 0 &&
+// 				document.querySelector('#hp-red-1').textContent == 0) ||
+// 			document.querySelector('#hp-blue-1').textContent == 0 ||
+// 			document.querySelector('#hp-red-1').textContent == 0
+// 		) {
+// 			if (
+// 				(document.querySelector('#hp-blue-2').textContent == 0 &&
+// 					document.querySelector('#hp-red-2').textContent == 0) ||
+// 				document.querySelector('#hp-blue-2').textContent == 0 ||
+// 				document.querySelector('#hp-red-2').textContent == 0
+// 			) {
+// 				if (blueAlive > redAlive) {
+// 					alert('Player Blue Won!');
+// 				} else if (redAlive > blueAlive) {
+// 					alert('Player Red Won!');
+// 				} else {
+// 					alert("It's a draw!");
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
 //stuff on jquery
 $('.listItems li').click(function() {
