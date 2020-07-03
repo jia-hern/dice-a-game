@@ -1,13 +1,13 @@
 # dice-a-game
 
-##SEI-23 Project 1##
+## SEI-23 Project 1
 
 Game is hosted here: https://jia-hern.github.io/dice-a-game/
 
-##Project 1 Objectives
+## Project 1 Objectives
 Create basic Game with HTML, JS and CSS
 
-_Game flow:_
+## Game flow:
 1. When both players are ready to start, someone clicks New game
 1. Players would randomize the attack(atk) and health(hp) of their teddy bears by clicking on the Roll dice button
 1. The left player(blue) would go roll the dice first, after which the right player(red) rolls the dice 
@@ -16,7 +16,7 @@ _Game flow:_
 
 May the odds ever be in your favor~
 
-_How does the game work:_
+## How does the game work:
 DOM manipulation is used to create divisions which each contain a teddy bear image, attack and health. An unique ID is tagged to each feature.
 
 An event listener is then added to the roll dice button, which updates the attack and health of the teddy bear based on the turn.
