@@ -2,7 +2,7 @@
 
 SEI-23 Project 1
 
-Game is hosted here: 
+Game is hosted here: https://jia-hern.github.io/dice-a-game/
 
 Project 1 Objectives
 Create basic Game with HTML, JS and CSS
@@ -36,3 +36,14 @@ An array is used to store the status of the teddy bears with alive being 1 and d
 The total number of teddy bears alive for each side is then computed based on the sum of each sides's array.
 
 When all duels have finished, the win condition is determined based on which player has more teddies alive.
+
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+   
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
