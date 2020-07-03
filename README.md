@@ -9,10 +9,10 @@ Create basic Game with HTML, JS and CSS
 
 Game flow:
 1. When both players are ready to start, someone clicks New game
-2. Players would randomize the attack(atk) and health(hp) of their teddy bears by clicking on the Roll dice button
-3. The left player(blue) would go roll the dice first, after which the right player(red) rolls the dice 
-4. After all the attack and health are populated for all teddy bears, one player can click showdown
-5. The player with more teddies left wins the game
+1. Players would randomize the attack(atk) and health(hp) of their teddy bears by clicking on the Roll dice button
+1. The left player(blue) would go roll the dice first, after which the right player(red) rolls the dice 
+1. After all the attack and health are populated for all teddy bears, one player can click showdown
+1. The player with more teddies left wins the game
 
 May the odds ever be in your favor~
 
@@ -36,14 +36,3 @@ An array is used to store the status of the teddy bears with alive being 1 and d
 The total number of teddy bears alive for each side is then computed based on the sum of each sides's array.
 
 When all duels have finished, the win condition is determined based on which player has more teddies alive.
-
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
-   
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
