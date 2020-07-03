@@ -1,10 +1,10 @@
 # dice-a-game
 
-_SEI-23 Project 1_
+##SEI-23 Project 1
 
 Game is hosted here: https://jia-hern.github.io/dice-a-game/
 
-_Project 1 Objectives_
+##Project 1 Objectives
 Create basic Game with HTML, JS and CSS
 
 _Game flow:_
