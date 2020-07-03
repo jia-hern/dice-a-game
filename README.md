@@ -1,6 +1,6 @@
 # dice-a-game
 
-##SEI-23 Project 1
+##SEI-23 Project 1##
 
 Game is hosted here: https://jia-hern.github.io/dice-a-game/
 
