@@ -5,7 +5,7 @@
 Game is hosted here: https://jia-hern.github.io/dice-a-game/
 
 ## Project 1 Objectives
-Create basic Game with HTML, JS and CSS
+Create a basic Game with HTML, JS and CSS
 
 ## Game flow:
 1. When both players are ready to start, someone clicks New game
