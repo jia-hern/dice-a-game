@@ -1,4 +1,4 @@
-# dice-a-game
+# Dice-a-game
 
 ## SEI-23 Project 1
 
